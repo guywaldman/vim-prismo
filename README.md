@@ -1,6 +1,6 @@
 # Prismo for Vim
 
-![Screencapture](/resources/vim_prismo.gif?raw=true "asdas")
+![Screencapture](/resources/screencapture.gif?raw=true "Screencapture")
 
 Decorate section titles and separators in your code with ease using vim-prismo. This vim plugin centers your title beautifully and finally gives your OCD a well-deserved break.
 
