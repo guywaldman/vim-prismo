@@ -1,6 +1,6 @@
-let g:prismo_dash = '-'
-let g:prismo_ruler = 80
-let g:prismo_toupper = 0
+let g:prismo_dash = '-' " the character to pad the title (dash by default)
+let g:prismo_ruler = 80 " the rightmost edge to span your title
+let g:prismo_toupper = 1 " whether to transform the title to uppercase
 
 " inspired by: @https://vi.stackexchange.com/a/421
 function! s:center_aux(width, leading, word)
@@ -20,7 +20,6 @@ endfunction
 function! s:center()
 		normal! ^viwy
 		let a:leading = @0 . ' '
-		"let a:leading = expand('<cWORD>') . ' '
 		normal! ^f lvg_y
 		if g:prismo_toupper
 			let a:word = toupper (@0)
