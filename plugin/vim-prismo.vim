@@ -1,5 +1,8 @@
 let g:prismo_dash = '-'
+let g:prismo_ruler = 80
+let g:prismo_toupper = 0
 
+" inspired by: @https://vi.stackexchange.com/a/421
 function! s:center_aux(width, leading, word)
 		let a:inserted_word = ' ' . a:word . ' '
 		let a:word_width = strlen(a:inserted_word)
@@ -19,8 +22,12 @@ function! s:center()
 		let a:leading = @0 . ' '
 		"let a:leading = expand('<cWORD>') . ' '
 		normal! ^f lvg_y
-		let a:word = toupper (@0)
-		call s:center_aux(80, a:leading, a:word)
+		if g:prismo_toupper
+			let a:word = toupper (@0)
+		else
+			let a:word = @0
+		endif
+		call s:center_aux(g:prismo_ruler, a:leading, a:word)
 endfunction
 
 command! Prismo call s:center()
