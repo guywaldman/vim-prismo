@@ -34,6 +34,8 @@ Type the beginning of your inline comment, followed by a space, followed by your
 
 Call `:Prismo` and it will then become: `// ------------- YOUR TITLE HERE -------------` (but spanning 80 characters wide - this is only for demonstration purposes).
 
+> **Note**: The inline comment style does not have to be `//`. As long as it a continuous sequence of characters, any inline comment style will do. For example, for BASH: `# title` will transform to `# ------ TITLE ------` (for a ruler of 6)
+
 The plugin will, by default, convert the title to uppercase.
 
 # Customization
