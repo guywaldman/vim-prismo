@@ -18,7 +18,7 @@ function! s:center()
 		normal! ^viwy
 		let a:leading = @0 . ' '
 		"let a:leading = expand('<cWORD>') . ' '
-		normal! ^eebvg_y
+		normal! ^f lvg_y
 		let a:word = toupper (@0)
 		call s:center_aux(80, a:leading, a:word)
 endfunction
