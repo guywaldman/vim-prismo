@@ -8,6 +8,14 @@ Decorate section titles and separators in your code with ease using vim-prismo. 
 
 `vim-prismo` was originally designed for much more, but for right now I'm settling for beautifying my inline comments. It is inspired by my previous plugin for Atom, [AutoSect](https://github.com/guywald1/auto-sect). I am a _vim-script_ beginner and would be very open and excited for ideas and pull requests.
 
+# TODO
+
+- [ ] Indentation-aware (coming soon)
+
+- [ ] Decoration pattern explicit declaration
+
+  (meaning you would write: `// ~ title`, and it would expand to `// ~~~~ TITLE ~~~~`
+
 # Installation
 
 ## Pathogen
