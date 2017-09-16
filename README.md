@@ -10,7 +10,9 @@ Decorate section titles and separators in your code with ease using vim-prismo. 
 
 # TODO
 
-- [ ] Indentation-aware (coming soon)
+- [ ] General improvements + proper documentation
+
+- [ ] Indentation-aware
 
 - [ ] Decoration pattern explicit declaration
 
